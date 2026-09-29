@@ -1,0 +1,34 @@
+// src/hooks/useScrollAnimation.js
+
+import { useEffect, useRef, useState } from "react";
+
+const useScrollAnimation = () => {
+  const ref = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+
+          // Animate only once
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  return [ref, isVisible];
+};
+
+export default useScrollAnimation;
