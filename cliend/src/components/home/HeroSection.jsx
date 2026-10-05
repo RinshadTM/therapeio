@@ -41,7 +41,7 @@ const HeroSection = () => {
       className="w-full max-h-screen flex flex-col md:flex-row bg-amber-50 bg-cover bg-center bg-no-repeat p-4"
       style={{ backgroundImage: `url(${bg1})` }}
     >
-      <div className="w-full md:w-1/2 min-h-125 flex items-center justify-center px-6 sm:px-10 lg:px-20 py-16 md:py-0 bg-white/20">
+      <div className="w-full md:w-full min-h-125 flex items-center justify-center px-6 sm:px-10 lg:px-20 py-16 md:py-0 bg-white/0">
         <div className="max-w-xl">
           {/* Small heading */}
           <p
@@ -61,7 +61,7 @@ const HeroSection = () => {
 
           {/* Description */}
           <p
-            className="mt-6 text-gray-600 text-base sm:text-lg leading-relaxed animate-text-slide"
+            className="mt-6 text-gray-600 font-semibold text-base sm:text-lg leading-relaxed animate-text-slide"
             style={{ animationDelay: "0.4s", opacity: 0 }}
           >
             Take the first step toward a healthier and happier you. Connect with
@@ -74,13 +74,13 @@ const HeroSection = () => {
             className="flex flex-wrap gap-4 mt-8 animate-text-slide"
             style={{ animationDelay: "0.55s", opacity: 0 }}
           >
-            <button className="px-6 py-3 rounded-full bg-cyan-500 text-white font-semibold hover:bg-emerald-600 transition" onClick={()=>{
+            <button className="px-6 py-3 rounded-full bg-cyan-500pm bg-primary  text-white font-semibold hover:bg-cyan-300 transition" onClick={()=>{
               navigate("/doctors")
             }}>
               Find a Therapist
             </button>
 
-            <button className="px-6 py-3 rounded-full border border-emerald-500 text-black font-semibold  hover:text-emerald-500 transition"
+            <button className="px-6 py-3 rounded-full border border-primary text-black font-semibold  hover:text-primary transition"
             onClick={()=>{
               navigate("/about")
             }}>
@@ -120,9 +120,9 @@ const HeroSection = () => {
       <div className="w-full md:w-1/2 min-h-100 md:min-h-125 relative">
         <div className="absolute inset-0" />
         <div className="absolute bottom-6 right-6 bg-yellow-50/10 backdrop-blur-md rounded-2xl p-5 shadow-lg">
-          <p className="text-primary font-semibold">✦ Safe & Private</p>
+          <p className="text-emerald-600 font-semibold">✦ Safe & Private</p>
 
-          <p className="text-gray-600 text-sm mt-1">
+          <p className="text-secondary text-sm mt-1">
             A comfortable space for your journey
           </p>
         </div>

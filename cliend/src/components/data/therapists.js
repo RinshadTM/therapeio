@@ -4,6 +4,7 @@ import consaltancy from "../../assets/consaltancy.jpg";
 import dctr1 from "../../assets/dctr1.jpg";
 import dctr2 from "../../assets/dctr2.png";
 import dctr3 from "../../assets/dctr3.png";
+import gazalVoice from "../../assets/audios/dctr1.wav";
 
 export const supports = [
   {
@@ -42,6 +43,7 @@ export const therapist = [
   {
     id: 1,
     name: "Gazal Ayesha",
+    voice: gazalVoice,
     post: "Consultant Psychologist",
     image: dctr2,
     rating: "4.8",

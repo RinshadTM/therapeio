@@ -5,14 +5,22 @@ const About = () => {
   return (
     <div className="pt-20">
       <section className="flex flex-col md:flex-row items-center gap-10 mb-20">
-        <div className="w-full md:w-1/2 about-left">
+        <div className="w-full md:w-1/2 about-left flex justify-center">
           <img
             src={assets.about}
             alt="Online Therapy"
-            className="w-full h-87.5 md:h-112.5 object-cover rounded-3xl"
+            className="
+      h-72 w-72
+      sm:h-80 sm:w-80
+      md:h-80 md:w-80
+      lg:h-105 lg:w-105
+      object-cover
+      rounded-full
+      border-2
+      border-primary
+    "
           />
         </div>
-
         <div
           className="w-full md:w-1/2 about-right"
           style={{
@@ -20,7 +28,7 @@ const About = () => {
             opacity: 0,
           }}
         >
-          <p className="text-primary font-semibold mb-3">ABOUT US</p>
+          <p className="text-secondary font-semibold mb-3">ABOUT US</p>
 
           <h1 className="text-3xl md:text-5xl leading-tight mb-6 font-bold text-secondary">
             Your Mental Health{" "}
@@ -43,7 +51,6 @@ const About = () => {
       </section>
 
       <section className="mb-20">
-       
         <div
           className="text-center mb-10 about-up"
           style={{
@@ -58,9 +65,7 @@ const About = () => {
           </h2>
         </div>
 
-     
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-         
           <div
             className="p-6 rounded-2xl bg-emerald-50 about-up transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
             style={{
@@ -76,7 +81,6 @@ const About = () => {
             </p>
           </div>
 
-         
           <div
             className="p-6 rounded-2xl bg-emerald-50 about-up transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
             style={{
@@ -92,7 +96,6 @@ const About = () => {
             </p>
           </div>
 
-          
           <div
             className="p-6 rounded-2xl bg-emerald-50 about-up transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
             style={{
@@ -110,7 +113,6 @@ const About = () => {
         </div>
       </section>
 
-     
       <section
         className="bg-green-50 rounded-3xl p-8 md:p-14 mb-20 text-black about-up"
         style={{
@@ -134,9 +136,7 @@ const About = () => {
         </div>
       </section>
 
-      
       <section className="mb-20">
-       
         <div
           className="text-center mb-10 about-up"
           style={{
@@ -151,9 +151,7 @@ const About = () => {
           </h2>
         </div>
 
-       
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        
           <div
             className="text-center p-6 hover:bg-green-50 hover:rounded-3xl about-up transition-all duration-300"
             style={{
@@ -172,7 +170,6 @@ const About = () => {
             </p>
           </div>
 
-          
           <div
             className="text-center p-6 hover:bg-green-50 hover:rounded-3xl about-up transition-all duration-300"
             style={{
@@ -191,7 +188,6 @@ const About = () => {
             </p>
           </div>
 
-         
           <div
             className="text-center p-6 hover:bg-green-50 hover:rounded-3xl about-up transition-all duration-300"
             style={{
@@ -210,7 +206,6 @@ const About = () => {
             </p>
           </div>
 
-        
           <div
             className="text-center p-6 hover:bg-green-50 hover:rounded-3xl about-up transition-all duration-300"
             style={{
@@ -231,7 +226,6 @@ const About = () => {
         </div>
       </section>
 
-     
       <section
         className="text-center bg-gray-50 rounded-3xl p-10 md:p-16 about-up"
         style={{

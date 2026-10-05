@@ -5,6 +5,7 @@ import Therapy from '../components/home/Therapy'
 import CareTeam from '../components/home/CareTeam'
 import Support from '../components/home/Support'
 import Blogs from '../components/home/Blogs'
+import Testimonials from '../components/home/Testimonials'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <HeroSection/>
       <Support/>
       <CareTeam/>
+      <Testimonials/>
       <Blogs/>
       {/* <WhyChooseUs/> */}
       {/* <Therapy/> */}
